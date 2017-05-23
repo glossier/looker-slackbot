@@ -71,7 +71,7 @@ class SlackActionListener extends Listener
 
           looker.client.post(
             "data_actions"
-            {action: payload.action}
+            {action: payload.action, user_id: message.user}
             success
             error
           )
